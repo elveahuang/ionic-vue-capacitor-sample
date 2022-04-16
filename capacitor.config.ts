@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-    appId: 'cn.elvea.app',
-    appName: 'eDev',
+    appId: 'cn.elvea.app.capacitor',
+    appName: 'Capacitor',
     webDir: 'dist',
     bundledWebRuntime: false,
 };
