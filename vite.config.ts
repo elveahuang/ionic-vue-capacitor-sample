@@ -10,6 +10,9 @@ export default ({ command, mode }) => {
         server: {
             port: 8081,
         },
+        build: {
+            outDir: env.VITE_APP_DIST ?? 'dist',
+        },
         resolve: {
             alias: {
                 'vue-i18n': 'vue-i18n/dist/vue-i18n.esm-browser.prod.js',
