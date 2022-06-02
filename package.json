@@ -3,10 +3,12 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-        "start": "vite --mode=development",
+        "start": "vite",
         "start:github": "vite --mode=github",
-        "build": "vite build --mode=production",
+        "start:production": "vite --mode=production",
+        "build": "vite build",
         "build:github": "vite build --mode=github",
+        "build:production": "vite build --mode=production",
         "serve": "vite preview",
         "prettier": "prettier --write './**/*.{ts,tsx,js,jsx,json,scss,css,vue}'"
     },
@@ -26,6 +28,7 @@
         "@ionic/vue-router": "^6.1.8",
         "core-js": "^3.22.8",
         "lodash-es": "^4.17.21",
+        "pinia": "^2.0.14",
         "vconsole": "^3.14.6",
         "vue": "^3.2.36",
         "vue-router": "^4.0.15"

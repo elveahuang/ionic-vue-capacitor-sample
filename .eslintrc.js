@@ -1,5 +1,14 @@
 module.exports = {
     root: true,
+    parser: 'vue-eslint-parser',
+    parserOptions: {
+        parser: '@typescript-eslint/parser',
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true,
+        },
+    },
     env: {
         browser: true,
         node: true,
@@ -11,13 +20,5 @@ module.exports = {
         '@vue/prettier',
         '@vue/eslint-config-prettier',
     ],
-    parserOptions: {
-        ecmaVersion: 2020,
-    },
-    rules: {
-        'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-        'vue/no-deprecated-slot-attribute': 'off',
-        '@typescript-eslint/no-explicit-any': 'off',
-    },
+    rules: {},
 };
