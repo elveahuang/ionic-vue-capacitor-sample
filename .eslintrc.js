@@ -1,12 +1,13 @@
 module.exports = {
     root: true,
     env: {
+        browser: true,
         node: true,
     },
     extends: [
-        'plugin:vue/vue3-essential',
         'eslint:recommended',
-        '@vue/typescript/recommended',
+        'plugin:vue/vue3-essential',
+        '@vue/eslint-config-typescript',
         '@vue/prettier',
         '@vue/eslint-config-prettier',
     ],

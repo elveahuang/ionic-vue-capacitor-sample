@@ -14,10 +14,10 @@ jobs:
       - name: Build
         run: |
           npm ci
-          npm run build
+          npm run build:github
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: build
