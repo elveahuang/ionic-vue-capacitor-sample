@@ -1,5 +1,9 @@
 module.exports = {
     root: true,
+    env: {
+        node: true,
+        browser: true,
+    },
     parser: 'vue-eslint-parser',
     parserOptions: {
         parser: '@typescript-eslint/parser',
@@ -9,15 +13,10 @@ module.exports = {
             jsx: true,
         },
     },
-    env: {
-        browser: true,
-        node: true,
-    },
     extends: [
         'eslint:recommended',
         'plugin:vue/vue3-essential',
         '@vue/eslint-config-typescript',
-        '@vue/prettier',
         '@vue/eslint-config-prettier',
     ],
     rules: {},
